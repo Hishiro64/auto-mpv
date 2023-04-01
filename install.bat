@@ -59,6 +59,9 @@ wget https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RI
 wget https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/master/models/rife-v4/flownet.param
 
 cd ..\..\..\..\
+
+wget https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+
 del 7zr.exe
 
 
