@@ -16,11 +16,11 @@ git clone https://github.com/Hishiro64/mpv-player.git; cd mpv-player ; ./install
 ````
 
 ## Usage
-   Drag and drop videos onto MPV or set MPV as your [default](https://youtu.be/Qqoh8AMEQNI) video player
+   Drag and drop videos onto MPV or set MPV as your default video player by running ``.\mpv\installer\mpv-install.bat``
 
 ## Key Bindings  
  - <kbd>Ctrl+u</kbd> To upscale
  - <kbd>Ctrl+a</kbd> To upscale anime
  - <kbd>Ctrl+r</kbd> Reset upscalers
- - <kbd>Ctrl+i</kbd> To interpolate frame rate
+ - <kbd>Ctrl+i</kbd> To interpolate framerate
  - <kbd>Ctrl+v</kbd> To paste video link or directory 
