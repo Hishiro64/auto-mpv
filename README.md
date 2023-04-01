@@ -16,7 +16,7 @@ git clone https://github.com/Hishiro64/mpv-player.git; cd mpv-player ; ./install
 ````
 
 ## Usage
-   Drag and drop videos onto MPV and set MPV as your [default](https://youtu.be/Qqoh8AMEQNI) video player
+   Drag and drop videos onto MPV or set MPV as your [default](https://youtu.be/Qqoh8AMEQNI) video player
 
 ## Key Bindings  
  - <kbd>Ctrl+u</kbd> To upscale
