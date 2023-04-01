@@ -24,6 +24,8 @@ wget https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 
 wget https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
 
+wget https://raw.githubusercontent.com/mpv-player/mpv/master/TOOLS/lua/autocrop.lua
+
 cd ..\
 cd vs
 
