@@ -33,6 +33,7 @@ cd ..\
 cd shaders
 
 wget https://gist.githubusercontent.com/igv/a015fc885d5c22e6891820ad89555637/raw/7c151e0af2281ae6657809be1f3c5efe0e325c38/KrigBilateral.glsl
+wget https://github.com/igv/FSRCNN-TensorFlow/releases/download/1.1/FSRCNNX_x2_16-0-4-1.glsl
 
 cd ..\..
 cd vapoursynth64\plugins
