@@ -7,13 +7,13 @@ wget https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20230401/
 .\7zr.exe x .\mpv-x86_64-v3-20230401-git-0f13c38.7z
 del .\mpv-x86_64-v3-20230401-git-0f13c38.7z
 
-wget https://www.python.org/ftp/python/3.10.10/python-3.10.10-embed-amd64.zip
-tar -xf .\python-3.10.10-embed-amd64.zip
-del .\python-3.10.10-embed-amd64.zip
+wget https://www.python.org/ftp/python/3.11.2/python-3.11.2-embed-amd64.zip
+tar -xf .\python-3.11.2-embed-amd64.zip
+del .\python-3.11.2-embed-amd64.zip
 
-wget https://github.com/vapoursynth/vapoursynth/releases/download/R61/VapourSynth64-Portable-R61.7z
-.\7zr.exe x .\VapourSynth64-Portable-R61.7z -y
-del .\VapourSynth64-Portable-R61.7z
+wget https://github.com/vapoursynth/vapoursynth/releases/download/R62/VapourSynth64-Portable-R62.7z
+.\7zr.exe x .\VapourSynth64-Portable-R62.7z -y
+del .\VapourSynth64-Portable-R62.7z
 
 wget https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
 tar -xf .\uosc.zip -C ./portable_config
