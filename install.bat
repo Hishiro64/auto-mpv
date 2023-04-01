@@ -37,11 +37,11 @@ wget https://gist.githubusercontent.com/igv/a015fc885d5c22e6891820ad89555637/raw
 cd ..\..
 cd vapoursynth64\plugins
 
-wget https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/releases/latest/download/RIFE-r9-win64.7z
+wget https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/releases/download/r9/RIFE-r9-win64.7z
 ..\..\7zr.exe x .\RIFE-r9-win64.7z
 del RIFE-r9-win64.7z
 
-wget https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/latest/download/miscfilters-r2.7z
+wget https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/download/R2/miscfilters-r2.7z
 ..\..\7zr.exe x .\miscfilters-r2.7z
 move .\win64\MiscFilters.dll .\
 rmdir /Q/S .\docs
@@ -49,7 +49,7 @@ rmdir /Q/S .\win32
 rmdir /Q/S .\win64
 del miscfilters-r2.7z
 
-wget https://github.com/HomeOfVapourSynthEvolution/VapourSynth-VMAF/releases/latest/download/VMAF-r10-win64.7z
+wget https://github.com/HomeOfVapourSynthEvolution/VapourSynth-VMAF/releases/download/r10/VMAF-r10-win64.7z
 ..\..\7zr.exe x .\VMAF-r10-win64.7z
 del VMAF-r10-win64.7z
 
