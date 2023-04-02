@@ -72,5 +72,5 @@ cd ..\..\..\..\
 del 7zr.exe
 del wget.exe
 
-.\mpv.exe
+.\mpv.exe & echo: & echo Installation Finished & exit
 
