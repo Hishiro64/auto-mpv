@@ -75,7 +75,8 @@ del wget.exe
 start .\mpv.exe
 
 echo:
-echo Installation Finished 
+echo Installation Finished 🙂
+echo:   exiting...
 
 exit
 
