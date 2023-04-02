@@ -23,7 +23,8 @@ for /f "tokens=1,* delims=:" %%A in ('curl -ks https://api.github.com/repos/shin
     set /a count+=1
     if !count! == 2 (
         curl -k --progress-bar -o mpv-x86_64-v3.7z -L %%B
-    ) goto :leave
+        goto :leave
+    )
 )
 :leave
 
