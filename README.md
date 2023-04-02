@@ -23,4 +23,4 @@ git clone https://github.com/Hishiro64/mpv-player.git; ./mpv-player/install.bat
  - <kbd>Ctrl+a</kbd> To upscale anime
  - <kbd>Ctrl+r</kbd> Reset upscalers
  - <kbd>Ctrl+i</kbd> To interpolate framerate
- - <kbd>Ctrl+v</kbd> To paste video link or directory 
+ - <kbd>Ctrl+v</kbd> To paste video link or path 
