@@ -4,6 +4,13 @@ set "MPV=%~dp0mpv"
 
 cd %MPV%
 
+cls
+
+echo:
+echo ╭─━━━━━━━━━━━━─╮
+echo    Installing   
+echo ╰─━━━━━━━━━━━━─╯
+echo:
 curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe
 
 "%MPV%\wget.exe" -q --show-progress https://www.7-zip.org/a/7zr.exe
@@ -75,8 +82,9 @@ del wget.exe
 start .\mpv.exe
 
 echo:
-echo Installation Finished 🙂
+echo Installation Finished
 echo:   exiting...
+echo:
 
 exit
 
