@@ -18,7 +18,7 @@ git clone https://github.com/Hishiro64/auto-mpv.git; ./auto-mpv/install.bat
 ````
 
 ## Usage
-   Drag and drop videos onto MPV or set MPV as your default video player by running ``.\mpv\installer\mpv-install.bat``
+   Drag and drop videos onto MPV or set MPV as your default video player by running ``mpv-install.bat``
 
 ## Key Bindings  
  - <kbd>Ctrl+u</kbd> To upscale

@@ -102,7 +102,7 @@ cd ..\..\..\..\
 :: Download latest version of yt-dlp
 "%MPV%\wget.exe" -q --show-progress https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 
-:: Remove residual utilitys
+:: Remove residual utilities
 del 7zr.exe
 del wget.exe
 
