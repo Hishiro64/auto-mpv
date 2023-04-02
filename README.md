@@ -2,6 +2,8 @@
 
 Automates the setup process for MPV Player and applies my personal configuration alongside shaders and VapourSynth models.
 
+![image](./preview.png)
+
 ## Installation
  1. [Download](https://github.com/Hishiro64/mpv-player/archive/refs/heads/main.zip) the repository
  2. Extract the zip file
