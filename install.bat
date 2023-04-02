@@ -4,7 +4,7 @@ set "MPV=%~dp0mpv"
 
 cd %MPV%
 
-curl -O https://eternallybored.org/misc/wget/1.21.3/64/wget.exe
+curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe
 
 "%MPV%\wget.exe" -q --show-progress https://www.7-zip.org/a/7zr.exe
 
