@@ -11,7 +11,7 @@ set "MPV=%~dp0mpv"
 cd %MPV%
 
 :: Download portable wget
-curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe
+curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe > nul
 
 :: Download latest prebuild MPV build for windows
 setlocal EnableDelayedExpansion
