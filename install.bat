@@ -50,7 +50,7 @@ del RIFE-r9-win64.7z
 
 "%MPV%\wget.exe" -q --show-progress https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/download/R2/miscfilters-r2.7z
 ..\..\7zr.exe x .\miscfilters-r2.7z -y > nul
-move .\win64\MiscFilters.dll .\
+move .\win64\MiscFilters.dll .\ > nul
 rmdir /Q/S .\docs
 rmdir /Q/S .\win32
 rmdir /Q/S .\win64
