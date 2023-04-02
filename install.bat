@@ -11,7 +11,7 @@ set "MPV=%~dp0mpv"
 cd %MPV%
 
 :: Download portable wget
-curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe > nul
+curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
 
 :: Download latest prebuild MPV build for windows
 setlocal EnableDelayedExpansion
@@ -20,7 +20,7 @@ set "count=0"
 for /f "tokens=1,* delims=:" %%A in ('curl -ks https://api.github.com/repos/shinchiro/mpv-winbuild-cmake/releases/latest ^| find "mpv-x86_64-v3"') do (
     set /a count+=1
     if !count! == 2 (
-        curl -k --progress-bar -o mpv-x86_64-v3.7z -L %%B
+        "%MPV%\wget.exe" -q --show-progress -O mpv-x86_64-v3.7z %%B
         goto :leave
     )
 )
