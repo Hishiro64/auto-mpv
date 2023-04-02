@@ -12,7 +12,7 @@ Automates the setup process for MPV Player and applies my personal configuration
   In PowerShell, run:
 
 ````
-git clone https://github.com/Hishiro64/mpv-player.git; cd mpv-player ; ./install.bat
+git clone https://github.com/Hishiro64/mpv-player.git; ./mpv-player/install.bat
 ````
 
 ## Usage
