@@ -5,7 +5,6 @@ cls
 echo:
 echo   Installing  MPV
 echo ```````````````````
-echo:
 
 set "MPV=%~dp0mpv"
 
