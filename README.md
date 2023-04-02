@@ -1,4 +1,4 @@
-# My MPV Player
+# Auto MPV
 
 Automates the setup process for MPV Player and applies my personal configuration.
 
