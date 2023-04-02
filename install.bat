@@ -7,9 +7,9 @@ cd %MPV%
 cls
 
 echo:
-echo ╭─━━━━━━━━━━━━─╮
+echo ╔═══════════════╗
 echo    Installing   
-echo ╰─━━━━━━━━━━━━─╯
+echo ╚═══════════════╝
 echo:
 curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe
 
