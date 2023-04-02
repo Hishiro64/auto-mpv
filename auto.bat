@@ -90,7 +90,7 @@ del miscfilters-r2.7z
 ..\..\7zr.exe x .\VMAF-r10-win64.7z -y > nul
 del VMAF-r10-win64.7z
 
-md models\rife-v4
+if not exist "models\rife-v4" mkdir models\rife-v4
 cd models\rife-v4
 
 :: Download latest version of RIFE-v4 model
