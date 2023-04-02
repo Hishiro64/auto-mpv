@@ -9,7 +9,7 @@ curl -O https://eternallybored.org/misc/wget/1.21.3/64/wget.exe
 "%MPV%\wget.exe" -q --show-progress https://www.7-zip.org/a/7zr.exe
 
 "%MPV%\wget.exe" -q --show-progress https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20230401/mpv-x86_64-v3-20230401-git-0f13c38.7z
-.\7zr.exe x .\mpv-x86_64-v3-20230401-git-0f13c38.7z
+.\7zr.exe x .\mpv-x86_64-v3-20230401-git-0f13c38.7z -y > nul
 del .\mpv-x86_64-v3-20230401-git-0f13c38.7z
 
 "%MPV%\wget.exe" -q --show-progress https://www.python.org/ftp/python/3.11.2/python-3.11.2-embed-amd64.zip
@@ -17,7 +17,7 @@ tar -xf .\python-3.11.2-embed-amd64.zip
 del .\python-3.11.2-embed-amd64.zip
 
 "%MPV%\wget.exe" -q --show-progress https://github.com/vapoursynth/vapoursynth/releases/download/R62/VapourSynth64-Portable-R62.7z
-.\7zr.exe x .\VapourSynth64-Portable-R62.7z -y
+.\7zr.exe x .\VapourSynth64-Portable-R62.7z -y > nul
 del .\VapourSynth64-Portable-R62.7z
 
 "%MPV%\wget.exe" -q --show-progress https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
@@ -45,11 +45,11 @@ cd ..\..
 cd vapoursynth64\plugins
 
 "%MPV%\wget.exe" -q --show-progress https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/releases/download/r9/RIFE-r9-win64.7z
-..\..\7zr.exe x .\RIFE-r9-win64.7z
+..\..\7zr.exe x .\RIFE-r9-win64.7z -y > nul
 del RIFE-r9-win64.7z
 
 "%MPV%\wget.exe" -q --show-progress https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/download/R2/miscfilters-r2.7z
-..\..\7zr.exe x .\miscfilters-r2.7z
+..\..\7zr.exe x .\miscfilters-r2.7z -y > nul
 move .\win64\MiscFilters.dll .\
 rmdir /Q/S .\docs
 rmdir /Q/S .\win32
@@ -57,7 +57,7 @@ rmdir /Q/S .\win64
 del miscfilters-r2.7z
 
 "%MPV%\wget.exe" -q --show-progress https://github.com/HomeOfVapourSynthEvolution/VapourSynth-VMAF/releases/download/r10/VMAF-r10-win64.7z
-..\..\7zr.exe x .\VMAF-r10-win64.7z
+..\..\7zr.exe x .\VMAF-r10-win64.7z -y > nul
 del VMAF-r10-win64.7z
 
 md models\rife-v4
