@@ -35,11 +35,6 @@ for /f "tokens=1,* delims=:" %%A in ('curl -ks https://api.github.com/repos/shin
 .\7zr.exe x .\mpv-x86_64-v3.7z -y > nul
 del .\mpv-x86_64-v3.7z
 
-:: Download Stable prebuild MPV build
-:: "%MPV%\wget.exe" -q --show-progress https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20230401/mpv-x86_64-v3-20230401-git-0f13c38.7z
-:: .\7zr.exe x .\mpv-x86_64-v3-20230401-git-0f13c38.7z -y > nul
-:: del .\mpv-x86_64-v3-20230401-git-0f13c38.7z
-
 :: Download embeded Python ~3.11.2
 "%MPV%\wget.exe" -q --show-progress https://www.python.org/ftp/python/3.11.2/python-3.11.2-embed-amd64.zip
 tar -xf .\python-3.11.2-embed-amd64.zip
