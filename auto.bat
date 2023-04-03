@@ -7,7 +7,7 @@ echo   Installing  MPV
 echo ```````````````````
 
 :: End all instances of MPV
-TASKKILL /IM mpv.exe /F 2> nul
+TASKKILL /IM mpv.exe /F > nul 2>&1
 
 set "MPV=%~dp0mpv"
 
