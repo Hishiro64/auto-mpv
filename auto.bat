@@ -10,8 +10,10 @@ echo ```````````````````
 :: End all instances of MPV
 TASKKILL /IM mpv.exe /F > nul 2>&1
 
+:: Set path 
 set "MPV=%~dp0mpv"
 
+:: Correct Path
 cd %MPV%
 
 :: Download portable wget
