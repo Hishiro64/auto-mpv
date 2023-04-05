@@ -57,7 +57,20 @@ del .\VapourSynth64-Portable-R62.7z
 tar -xf .\uosc.zip -C ./portable_config
 del .\uosc.zip
 
-pushd .\portable_config\scripts
+pushd .\portable_config\script-opts
+
+:: Download latest version of script-opts
+"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/script-opts/SmartCopyPaste.conf
+"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/script-opts/thumbfast.conf
+"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/script-opts/uosc.conf
+
+cd ..\
+
+:: Download latest version of input.conf and mpv.conf
+"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/mpv.conf
+"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/input.conf
+
+cd scripts
 
 :: Download latest version of scripts
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
