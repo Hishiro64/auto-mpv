@@ -54,7 +54,7 @@ del .\VapourSynth64-Portable-R62.7z
 tar -xf .\uosc.zip -C ./portable_config
 del .\uosc.zip
 
-cd .\portable_config\scripts
+pushd .\portable_config\scripts
 
 :: Download latest version of scripts
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
@@ -74,8 +74,8 @@ cd shaders
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/igv/FSRCNN-TensorFlow/releases/download/1.1/FSRCNNX_x2_16-0-4-1.glsl
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/bloc97/Anime4K/master/glsl/Restore/Anime4K_Restore_CNN_L.glsl
 
-cd ..\..
-cd vapoursynth64\plugins
+popd
+pushd vapoursynth64\plugins
 
 :: Download latest version of RIFE
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/releases/download/r9/RIFE-r9-win64.7z
@@ -103,7 +103,7 @@ cd models\rife-v4
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/master/models/rife-v4/flownet.bin
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/master/models/rife-v4/flownet.param
 
-cd ..\..\..\..\
+popd ..\..\..\..\
 
 :: Remove residual utilities
 del 7zr.exe
