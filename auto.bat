@@ -46,6 +46,9 @@ del .\python-3.11.2-embed-amd64.zip
 .\7zr.exe x .\VapourSynth64-Portable-R62.7z -y > nul
 del .\VapourSynth64-Portable-R62.7z
 
+:: Download latest version of yt-dlp
+"%MPV%\wget.exe" -q -N --show-progress https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
+
 :: Download latest version of uosc
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
 tar -xf .\uosc.zip -C ./portable_config
@@ -101,9 +104,6 @@ cd models\rife-v4
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/master/models/rife-v4/flownet.param
 
 cd ..\..\..\..\
-
-:: Download latest version of yt-dlp
-"%MPV%\wget.exe" -q -N --show-progress https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 
 :: Remove residual utilities
 del 7zr.exe
