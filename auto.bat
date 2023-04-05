@@ -17,7 +17,7 @@ set "MPV=%~dp0mpv"
 cd %MPV%
 
 :: Download portable wget
-curl -O --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
+curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
 
 :: Download latest prebuild MPV build for windows
 setlocal EnableDelayedExpansion
@@ -120,10 +120,6 @@ cd models\rife-v4
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/master/models/rife-v4/flownet.param
 
 popd
-
-:: Remove residual utilities
-del 7zr.exe
-del wget.exe
 
 start .\mpv.exe
 
