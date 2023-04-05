@@ -1,4 +1,5 @@
 @echo off
+TITLE Auto MPV
 
 cls
 
