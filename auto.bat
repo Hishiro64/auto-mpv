@@ -104,7 +104,7 @@ cd models\rife-v4
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/master/models/rife-v4/flownet.bin
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/master/models/rife-v4/flownet.param
 
-popd ..\..\..\..\
+popd
 
 :: Remove residual utilities
 del 7zr.exe
