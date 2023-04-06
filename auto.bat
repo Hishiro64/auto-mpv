@@ -59,15 +59,15 @@ tar -xf .\uosc.zip -C ./portable_config
 pushd .\portable_config\script-opts
 
 :: Download latest version of script-opts
-"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/script-opts/SmartCopyPaste.conf
-"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/script-opts/thumbfast.conf
-"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/script-opts/uosc.conf
+"%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/SmartCopyPaste.conf
+"%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/thumbfast.conf
+"%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/uosc.conf
 
 cd ..\
 
 :: Download latest version of input.conf and mpv.conf
-"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/mpv.conf
-"%MPV%\wget.exe" -q -N --show-progress http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/mpv/portable_config/input.conf
+"%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/mpv.conf
+"%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/input.conf
 
 cd scripts
 
