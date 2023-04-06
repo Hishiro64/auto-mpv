@@ -1,6 +1,6 @@
 # Auto MPV
 
-Automates the setup process for MPV Player and applies my personal configuration alongside adding VapourSynth models and shaders.
+Automates the setup process for MPV Player and applies my personal configuration alongside using VapourSynth models and shaders.
 
 ![image](./preview.png)
 
