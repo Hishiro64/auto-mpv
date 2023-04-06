@@ -21,7 +21,8 @@ Auto MPV is a script that simplifies the setup\update process for MPV Player. Fe
 ## 👀 Usage
    Drag and drop videos onto MPV or set MPV as your default video player by running ``mpv-install.bat``
 
-## 🎹 Key Bindings  
+## 🎹 Key Bindings
+ - <kbd>Ctrl+Shift+u</kbd> To update using Auto MPV
  - <kbd>Ctrl+u</kbd> To upscale
  - <kbd>Ctrl+a</kbd> To upscale cartoons/anime (lite)
  - <kbd>Ctrl+r</kbd> Reset upscalers
