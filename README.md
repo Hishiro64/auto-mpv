@@ -1,6 +1,6 @@
 # ⚙ Auto MPV 
 
-Auto MPV is a script that simplifies the setup\update process for MPV Player. Fetching scripts, configs, and model files from external repositories to be used with the player. It installs VapourSynth for RIFE frame interpolation and basic shaders and scripts for a better Out-of-box experience. It's a fully customizable one batch script. Simply fork/clone it and make your changes.
+Auto MPV simplifies the setup\update process for MPV Player. Fetching from external repositories, it installs VapourSynth for RIFE frame interpolation, basic shaders, scripts, and configs for a better Out-of-box experience. It's a fully customizable one batch script. Simply fork/clone it and make your changes.
 
 ![image](./preview.png)
 
