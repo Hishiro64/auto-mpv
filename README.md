@@ -22,7 +22,7 @@ git clone https://github.com/Hishiro64/auto-mpv.git; ./auto-mpv/auto.bat
 
 ## Key Bindings  
  - <kbd>Ctrl+u</kbd> To upscale
- - <kbd>Ctrl+a</kbd> To upscale cartoons/anime
+ - <kbd>Ctrl+a</kbd> To upscale cartoons/anime (lite)
  - <kbd>Ctrl+r</kbd> Reset upscalers
  - <kbd>Ctrl+i</kbd> To interpolate framerate
  - <kbd>Ctrl+v</kbd> To paste video link or path 
