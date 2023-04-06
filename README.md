@@ -11,7 +11,7 @@ Automates the setup process for MPV Player and applies my personal configuration
  4. Run ``auto.bat``
 
 ## Cli Installation
-  In PowerShell, run:
+  In PowerShell, just run:
 
 ````
 git clone https://github.com/Hishiro64/auto-mpv.git; ./auto-mpv/auto.bat
