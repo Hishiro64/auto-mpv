@@ -55,7 +55,6 @@ del .\VapourSynth64-Portable-R62.7z
 :: Download latest version of uosc
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
 tar -xf .\uosc.zip -C ./portable_config
-del .\uosc.zip
 
 pushd .\portable_config\script-opts
 
