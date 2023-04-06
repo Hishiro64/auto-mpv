@@ -72,6 +72,7 @@ cd ..\
 cd scripts
 
 :: Download latest version of scripts
+"%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/scripts/Auto-Mpv.lua
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
 
