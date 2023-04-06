@@ -1,7 +1,7 @@
 -- Runs Auto.bat
 
 function run_auto_mpv()
-    os.execute(".\\wget.exe http://192.168.1.100:9006/test111/mpv-config/raw/branch/main/auto.bat -O ..\\auto.bat")
+    os.execute(".\\wget.exe https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/auto.bat -O ..\\auto.bat")
     os.execute("..\\auto.bat")
   end
   
