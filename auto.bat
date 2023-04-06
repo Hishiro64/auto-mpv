@@ -36,7 +36,7 @@ for /f "tokens=1,* delims=:" %%A in ('curl -ks https://api.github.com/repos/shin
 "%MPV%\wget.exe" -q -N --show-progress https://www.7-zip.org/a/7zr.exe
 
 :: Extract MPV
-.\7zr.exe x .\mpv-x86_64-v3.7z -y > nul
+"%MPV%\7zr.exe" x .\mpv-x86_64-v3.7z -y > nul
 del .\mpv-x86_64-v3.7z
 
 :: Download embeded Python ~3.11.2
@@ -46,7 +46,7 @@ del .\python-3.11.2-embed-amd64.zip
 
 :: Download VapourSynth64 Portable ~R62
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/vapoursynth/vapoursynth/releases/download/R62/VapourSynth64-Portable-R62.7z
-.\7zr.exe x .\VapourSynth64-Portable-R62.7z -y > nul
+"%MPV%\7zr.exe" x .\VapourSynth64-Portable-R62.7z -y > nul
 del .\VapourSynth64-Portable-R62.7z
 
 :: Download latest version of yt-dlp
@@ -94,12 +94,12 @@ pushd vapoursynth64\plugins
 
 :: Download latest version of RIFE
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/releases/download/r9/RIFE-r9-win64.7z
-..\..\7zr.exe x .\RIFE-r9-win64.7z -y > nul
+"%MPV%\7zr.exe" x .\RIFE-r9-win64.7z -y > nul
 del RIFE-r9-win64.7z
 
 :: Download latest version of miscfilters
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/download/R2/miscfilters-r2.7z
-..\..\7zr.exe x .\miscfilters-r2.7z -y > nul
+"%MPV%\7zr.exe" x .\miscfilters-r2.7z -y > nul
 move .\win64\MiscFilters.dll .\ > nul
 rmdir /Q/S .\docs
 rmdir /Q/S .\win32
@@ -108,7 +108,7 @@ del miscfilters-r2.7z
 
 :: Download latest version of VMAF
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/HomeOfVapourSynthEvolution/VapourSynth-VMAF/releases/download/r10/VMAF-r10-win64.7z
-..\..\7zr.exe x .\VMAF-r10-win64.7z -y > nul
+"%MPV%\7zr.exe" x .\VMAF-r10-win64.7z -y > nul
 del VMAF-r10-win64.7z
 
 if not exist "models\rife-v4" mkdir models\rife-v4
