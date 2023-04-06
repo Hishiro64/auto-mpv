@@ -124,7 +124,7 @@ start .\mpv.exe
 
 echo:
 echo Installation Finished
-echo:   exiting...
+echo:   Exiting...
 echo:
 
 exit
