@@ -1,17 +1,17 @@
 # ⚙ Auto MPV 
 
-Automates the setup process for MPV Player and applies my personal configuration alongside using VapourSynth models and shaders.
+Auto MPV is a script that simplifies the setup\update process for MPV Player. Fetching scripts, configs, and model files from external repositories to be used with the player. It installs VapourSynth for RIFE frame interpolation and basic shaders and scripts for a better Out-of-box experience. It's a fully customizable one batch script. Simply fork/clone it and make your changes.
 
 ![image](./preview.png)
 
-## 🧰 Installation
+## 🛠️ Installation
  1. [Download](https://github.com/Hishiro64/mpv-player/archive/refs/heads/main.zip) the repository
  2. Extract the zip file
  3. Navigate to the `mpv-player-main` directory.
- 4. You may want to edit ``auto.bat`` to fetch your requisites.
+ 4. Edit ``auto.bat`` to match your requisites.
  5. Run ``auto.bat``
 
-## 🏃‍♂️ Cli Installation
+## 🏃‍♂️ One Line Cli Installation
   In PowerShell, just run:
 
   ````
