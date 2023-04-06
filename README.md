@@ -1,4 +1,4 @@
-# Auto MPV ⚙
+# ⚙ Auto MPV 
 
 Automates the setup process for MPV Player and applies my personal configuration alongside using VapourSynth models and shaders.
 
