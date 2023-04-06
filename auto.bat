@@ -1,14 +1,14 @@
 @echo off
 TITLE Auto MPV
 
+:: End all instances of MPV
+TASKKILL /IM mpv.exe /F > nul 2>&1
+
 cls
 
 echo:
-echo   Installing  MPV
-echo ```````````````````
-
-:: End all instances of MPV
-TASKKILL /IM mpv.exe /F > nul 2>&1
+echo   Installing/Updating  MPV
+echo ````````````````````````````
 
 :: Set path 
 set "MPV=%~dp0mpv"
