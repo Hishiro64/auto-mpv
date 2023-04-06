@@ -1,6 +1,6 @@
 # ⚙ Auto MPV 
 
-Auto MPV is a script that simplifies the setup\update process for MPV Player. Fetching scripts, configs, and model files from external repositories to be used with the player. It installs VapourSynth for RIFE frame interpolation and basic shaders and scripts for a better Out-of-box experience. It's a fully customizable one batch script. Simply fork/clone it and make your changes.
+Auto MPV simplifies the setup\update process for MPV Player. Fetching from external repositories, it installs VapourSynth for RIFE frame interpolation, basic shaders, scripts, and configs for a better Out-of-box experience. It's a fully customizable one batch script. Simply fork/clone it and make your changes.
 
 ![image](./preview.png)
 
@@ -21,7 +21,8 @@ Auto MPV is a script that simplifies the setup\update process for MPV Player. Fe
 ## 👀 Usage
    Drag and drop videos onto MPV or set MPV as your default video player by running ``mpv-install.bat``
 
-## 🎹 Key Bindings  
+## 🎹 Key Bindings
+ - <kbd>Ctrl+Shift+u</kbd> To update using Auto MPV
  - <kbd>Ctrl+u</kbd> To upscale
  - <kbd>Ctrl+a</kbd> To upscale cartoons/anime (lite)
  - <kbd>Ctrl+r</kbd> Reset upscalers
