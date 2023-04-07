@@ -139,7 +139,7 @@ del RIFE-r9-win64.7z
 
 :: Download latest version of miscfilters and extract only 64bit MiscFilters.dll
 %Download-->% https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/download/R2/miscfilters-r2.7z
-%Extract-->% miscfilters-r2.7z win64\MiscFilters.dll > nul
+%Extract-->% .\miscfilters-r2.7z win64\MiscFilters.dll > nul
 move .\win64\MiscFilters.dll .\ > nul
 rmdir /Q/S .\win64
 del miscfilters-r2.7z
@@ -168,4 +168,3 @@ echo:   Exiting...
 echo:
 
 exit
-
