@@ -12,10 +12,13 @@ set "MPV=%~dp0"
 :: Set Wget command
 set "Download-->=%MPV%\wget.exe -q -N --show-progress"
 
-:: Correct Path
+:: Set 7zr command
+set "7zr-->=%MPV%\7zr.exe -y x" 
+
+:: Correct path
 cd %MPV%
 
-:: Change Header Based on install status 
+:: Change header based on install status 
 echo:
 if exist ".auto-is-installed" (
     echo   Updating  MPV
@@ -52,7 +55,7 @@ for /f "tokens=1,* delims=:" %%A in ('curl -ks https://api.github.com/repos/shin
 %Download-->% https://www.7-zip.org/a/7zr.exe
 
 :: Extract MPV
-"%MPV%\7zr.exe" x .\mpv-x86_64-v3.7z -y > nul
+%Extract-->% .\mpv-x86_64-v3.7z > nul
 del .\mpv-x86_64-v3.7z
 
 :: Download embedded Python ~3.11.2
@@ -62,7 +65,7 @@ del .\python-3.11.2-embed-amd64.zip
 
 :: Download VapourSynth64 Portable ~R62
 %Download-->% https://github.com/vapoursynth/vapoursynth/releases/download/R62/VapourSynth64-Portable-R62.7z
-"%MPV%\7zr.exe" x .\VapourSynth64-Portable-R62.7z -y > nul
+%Extract-->% .\VapourSynth64-Portable-R62.7z > nul
 del .\VapourSynth64-Portable-R62.7z
 
 :: Download latest version of yt-dlp
@@ -131,19 +134,19 @@ pushd vapoursynth64\plugins
 
 :: Download latest version of RIFE
 %Download-->% https://github.com/HomeOfVapourSynthEvolution/VapourSynth-RIFE-ncnn-Vulkan/releases/download/r9/RIFE-r9-win64.7z
-"%MPV%\7zr.exe" x .\RIFE-r9-win64.7z -y > nul
+%Extract-->% .\RIFE-r9-win64.7z > nul
 del RIFE-r9-win64.7z
 
 :: Download latest version of miscfilters and extract only 64bit MiscFilters.dll
 %Download-->% https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/download/R2/miscfilters-r2.7z
-"%MPV%\7zr.exe" x -y miscfilters-r2.7z win64\MiscFilters.dll > nul
+%Extract-->% miscfilters-r2.7z win64\MiscFilters.dll > nul
 move .\win64\MiscFilters.dll .\ > nul
 rmdir /Q/S .\win64
 del miscfilters-r2.7z
 
 :: Download latest version of VMAF
 %Download-->% https://github.com/HomeOfVapourSynthEvolution/VapourSynth-VMAF/releases/download/r10/VMAF-r10-win64.7z
-"%MPV%\7zr.exe" x .\VMAF-r10-win64.7z -y > nul
+%Extract-->% .\VMAF-r10-win64.7z > nul
 del VMAF-r10-win64.7z
 
 cd models\rife-v4
