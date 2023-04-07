@@ -52,9 +52,14 @@ del .\VapourSynth64-Portable-R62.7z
 :: Download latest version of yt-dlp
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 
+if not exist ".\portable_config" mkdir .\portable_config
+if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
+if not exist ".\portable_config\vs" mkdir .\portable_config\vs
+if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
+
 :: Download latest version of uosc
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
-tar -xf .\uosc.zip -C ./portable_config
+tar -xf .\uosc.zip -C .\portable_config
 
 pushd .\portable_config\script-opts
 
@@ -98,14 +103,11 @@ pushd vapoursynth64\plugins
 "%MPV%\7zr.exe" x .\RIFE-r9-win64.7z -y > nul
 del RIFE-r9-win64.7z
 
-:: Download latest version of miscfilters
+:: Download latest version of miscfilters and extract only 64bit MiscFilters.dll
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/vapoursynth/vs-miscfilters-obsolete/releases/download/R2/miscfilters-r2.7z
-"%MPV%\7zr.exe" x .\miscfilters-r2.7z -y > nul
+"%MPV%\7zr.exe" x -y miscfilters-r2.7z win64\MiscFilters.dll > nul
 move .\win64\MiscFilters.dll .\ > nul
-rmdir /Q/S .\docs
-rmdir /Q/S .\win32
 rmdir /Q/S .\win64
-del miscfilters-r2.7z
 
 :: Download latest version of VMAF
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/HomeOfVapourSynthEvolution/VapourSynth-VMAF/releases/download/r10/VMAF-r10-win64.7z
