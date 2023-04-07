@@ -14,7 +14,7 @@ cd %MPV%
 
 :: Change Header Based on install status 
 echo:
-if exist ".auto-installed" (
+if exist ".auto-is-installed" (
     echo   Updating  MPV
     echo `````````````````
 ) else (
@@ -71,6 +71,10 @@ tar -xf .\uosc.zip -C .\portable_config
 
 pushd .\portable_config\script-opts
 
+:::::::::::::::::::
+::  script-opts  ::
+::::::::::::::::::: 
+
 :: Download latest version of script-opts
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/SmartCopyPaste.conf
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/thumbfast.conf
@@ -78,11 +82,19 @@ pushd .\portable_config\script-opts
 
 cd ..\
 
+:::::::::::::::::::::::
+::  portable_config  ::
+::::::::::::::::::::::: 
+
 :: Download latest version of input.conf and mpv.conf
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/mpv.conf
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/input.conf
 
 cd scripts
+
+:::::::::::::::
+::  scripts  ::
+::::::::::::::: 
 
 :: Download latest version of scripts
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/scripts/Auto-Mpv.lua
@@ -92,11 +104,19 @@ cd scripts
 cd ..\
 cd vs
 
+::::::::::
+::  vs  ::
+::::::::::
+
 :: Download latest version of VapourSynth scripts
 "%MPV%\wget.exe" -q -N --show-progress https://raw.githubusercontent.com/hooke007/MPV_lazy/main/portable_config/vs/rife_2x.vpy
 
 cd ..\
 cd shaders
+
+:::::::::::::::
+::  shaders  ::
+:::::::::::::::
 
 :: Download latest version of shaders
 "%MPV%\wget.exe" -q -N --show-progress https://gist.githubusercontent.com/igv/a015fc885d5c22e6891820ad89555637/raw/7c151e0af2281ae6657809be1f3c5efe0e325c38/KrigBilateral.glsl
@@ -134,7 +154,7 @@ popd
 start .\mpv.exe
 
 :: Change install status
-echo "1">.\.auto-installed
+echo "1">.\.auto-is-installed
 
 echo:
 echo Installation Finished
