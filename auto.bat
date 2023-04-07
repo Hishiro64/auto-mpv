@@ -13,7 +13,7 @@ set "MPV=%~dp0"
 set "Download-->=%MPV%\wget.exe -q -N --show-progress"
 
 :: Set 7zr command
-set "7zr-->=%MPV%\7zr.exe -y x" 
+set "Extract-->=%MPV%\7zr.exe -y x" 
 
 :: Correct path
 cd %MPV%
