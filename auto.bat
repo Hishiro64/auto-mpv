@@ -6,15 +6,28 @@ TASKKILL /IM mpv.exe /F > nul 2>&1
 
 cls
 
-echo:
-echo   Installing/Updating  MPV
-echo ````````````````````````````
-
 :: Set path 
 set "MPV=%~dp0"
 
 :: Correct Path
 cd %MPV%
+
+:: Change Header Based on install status 
+echo:
+if exist ".auto-installed" (
+    echo   Updating  MPV
+    echo `````````````````
+) else (
+    echo   Installing  MPV
+    echo ```````````````````
+
+    :: Create directories if it doesn't exist
+    if not exist ".\portable_config" mkdir .\portable_config
+    if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
+    if not exist ".\portable_config\vs" mkdir .\portable_config\vs
+    if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
+    if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
+)
 
 :: Download portable wget
 curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
@@ -51,12 +64,6 @@ del .\VapourSynth64-Portable-R62.7z
 
 :: Download latest version of yt-dlp
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
-
-:: Create directories if it doesn't exist
-if not exist ".\portable_config" mkdir .\portable_config
-if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
-if not exist ".\portable_config\vs" mkdir .\portable_config\vs
-if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
 
 :: Download latest version of uosc
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/tomasklaen/uosc/releases/latest/download/uosc.zip
@@ -116,7 +123,6 @@ del miscfilters-r2.7z
 "%MPV%\7zr.exe" x .\VMAF-r10-win64.7z -y > nul
 del VMAF-r10-win64.7z
 
-if not exist "models\rife-v4" mkdir models\rife-v4
 cd models\rife-v4
 
 :: Download latest version of RIFE-v4 model
@@ -128,7 +134,9 @@ popd
 start .\mpv.exe
 
 echo:
-echo Installation Finished
+
+:: Change install status
+echo Installation Finished &  > ".auto-installed"
 echo:   Exiting...
 echo:
 
