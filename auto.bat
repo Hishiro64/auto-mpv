@@ -133,10 +133,11 @@ popd
 
 start .\mpv.exe
 
-echo:
-
 :: Change install status
-echo Installation Finished &  > ".auto-installed"
+echo "1">.\.auto-installed
+
+echo:
+echo Installation Finished
 echo:   Exiting...
 echo:
 
