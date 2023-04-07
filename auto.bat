@@ -82,9 +82,9 @@ pushd .\portable_config\script-opts
 ::::::::::::::::::: 
 
 :: Download latest version of script-opts
-%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/SmartCopyPaste.conf
-%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/thumbfast.conf
-%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/script-opts/uosc.conf
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/SmartCopyPaste.conf
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/thumbfast.conf
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/uosc.conf
 
 cd ..\
 
@@ -93,8 +93,8 @@ cd ..\
 ::::::::::::::::::::::: 
 
 :: Download latest version of input.conf and mpv.conf
-%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/mpv.conf
-%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/input.conf
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/mpv.conf
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/input.conf
 
 cd scripts
 
@@ -103,7 +103,7 @@ cd scripts
 ::::::::::::::: 
 
 :: Download latest version of scripts
-%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/mpv/portable_config/scripts/Auto-Mpv.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/Auto-Mpv.lua
 %Download-->% https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 %Download-->% https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
 
