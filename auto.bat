@@ -11,7 +11,7 @@ echo   Installing/Updating  MPV
 echo ````````````````````````````
 
 :: Set path 
-set "MPV=%~dp0mpv"
+set "MPV=%~dp0"
 
 :: Correct Path
 cd %MPV%
