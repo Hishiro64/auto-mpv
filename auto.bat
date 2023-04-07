@@ -32,10 +32,10 @@ if exist ".auto-is-installed" (
     if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
 )
 
-:: Download portable wget
+:: Download portable Wget
 curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
 
-:: Download latest prebuild MPV build for windows
+:: Download latest prebuild MPV build for Windows
 setlocal EnableDelayedExpansion
 set "count=0"
 
@@ -55,7 +55,7 @@ for /f "tokens=1,* delims=:" %%A in ('curl -ks https://api.github.com/repos/shin
 "%MPV%\7zr.exe" x .\mpv-x86_64-v3.7z -y > nul
 del .\mpv-x86_64-v3.7z
 
-:: Download embeded Python ~3.11.2
+:: Download embedded Python ~3.11.2
 %Download-->% https://www.python.org/ftp/python/3.11.2/python-3.11.2-embed-amd64.zip
 tar -xf .\python-3.11.2-embed-amd64.zip
 del .\python-3.11.2-embed-amd64.zip
