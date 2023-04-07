@@ -52,6 +52,7 @@ del .\VapourSynth64-Portable-R62.7z
 :: Download latest version of yt-dlp
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 
+:: Create directories if it doesn't exist
 if not exist ".\portable_config" mkdir .\portable_config
 if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
 if not exist ".\portable_config\vs" mkdir .\portable_config\vs
@@ -108,6 +109,7 @@ del RIFE-r9-win64.7z
 "%MPV%\7zr.exe" x -y miscfilters-r2.7z win64\MiscFilters.dll > nul
 move .\win64\MiscFilters.dll .\ > nul
 rmdir /Q/S .\win64
+del miscfilters-r2.7z
 
 :: Download latest version of VMAF
 "%MPV%\wget.exe" -q -N --show-progress https://github.com/HomeOfVapourSynthEvolution/VapourSynth-VMAF/releases/download/r10/VMAF-r10-win64.7z
