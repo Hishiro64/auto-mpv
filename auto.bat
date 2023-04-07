@@ -38,13 +38,13 @@ if exist ".auto-is-installed" (
 :: Download portable Wget
 curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
 
-:: Download latest prebuild MPV build for Windows
+:: Download latest pre-build MPV build for Windows
 setlocal EnableDelayedExpansion
-set "count=0"
+set "instance=0"
 
 for /f "tokens=1,* delims=:" %%A in ('curl -ks https://api.github.com/repos/shinchiro/mpv-winbuild-cmake/releases/latest ^| find "mpv-x86_64-v3"') do (
-    set /a count+=1
-    if !count! == 2 (
+    set /a instance+=1
+    if !instance! == 2 (
         %Download-->% -O mpv-x86_64-v3.7z %%B
         goto :leave
     )
