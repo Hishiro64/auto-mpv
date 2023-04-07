@@ -1,14 +1,14 @@
 # ⚙ Auto MPV 
 
-Simplifies the setup\update process for MPV Player. Fetching from external repositories, it installs VapourSynth for RIFE frame interpolation, basic shaders, scripts, and configs for a improved Out-of-box experience. It's just one fully customizable batch script. Simply fork/clone it and make your changes.
+Automates your setup\update process for MPV Player. Fetching from external repositories, it installs VapourSynth for RIFE frame interpolation, basic shaders, scripts, and configs. It's one fully customizable batch script. Simply swap out my defaults with your own.
 
 ![image](./preview.png)
 
 ## 🛠️ Installation
- 1. [Download](https://github.com/Hishiro64/mpv-player/archive/refs/heads/main.zip) the repository
+ 1. [Download](https://github.com/Hishiro64/mpv-player/archive/refs/heads/main.zip) the latest release
  2. Extract the zip file
  3. Navigate to the `mpv-player-main` directory.
- 4. Edit ``auto.bat`` to match your requisites.
+ 4. Edit ``auto.bat`` to match your requisites (Optional).
  5. Run ``auto.bat``
 
 ## 🏃‍♂️ One Line Cli Installation
