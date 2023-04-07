@@ -1,5 +1,5 @@
 @echo off
-TITLE Auto MPV
+TITLE Auto MPV ⚙
 
 :: End all instances of MPV
 TASKKILL /IM mpv.exe /F > nul 2>&1
