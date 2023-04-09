@@ -26,7 +26,7 @@ if exist ".auto-is-installed" (
     echo   Installing  MPV
 )
     echo ```````````````````
-    
+
     :: Create directories if it doesn't exist
     if not exist ".\portable_config" mkdir .\portable_config
     if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
@@ -62,6 +62,12 @@ del .\mpv-x86_64-v3.7z
 %Download-->% https://www.python.org/ftp/python/3.11.2/python-3.11.2-embed-amd64.zip
 tar -xf .\python-3.11.2-embed-amd64.zip
 del .\python-3.11.2-embed-amd64.zip
+
+:: Get the requests module
+echo "import site" >> python311._pth
+%Download-->% https://bootstrap.pypa.io/get-pip.py
+.\python.exe get-pip.py > nul
+.\Scripts\pip.exe install requests
 
 :: Download VapourSynth64 Portable ~R62
 %Download-->% https://github.com/vapoursynth/vapoursynth/releases/download/R62/VapourSynth64-Portable-R62.7z
