@@ -66,7 +66,7 @@ del .\python-3.11.2-embed-amd64.zip
 :: Get the requests module
 echo import site >> python311._pth
 %Download-->% https://bootstrap.pypa.io/get-pip.py
-.\python.exe get-pip.py > nul
+.\python.exe get-pip.py --no-warn-script-location > nul
 .\Scripts\pip.exe install requests --no-warn-script-location > nul
 
 :: Download VapourSynth64 Portable ~R62
