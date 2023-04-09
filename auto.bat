@@ -22,11 +22,11 @@ cd %MPV%
 echo:
 if exist ".auto-is-installed" (
     echo   Updating  MPV
-    echo `````````````````
 ) else (
     echo   Installing  MPV
+)
     echo ```````````````````
-
+    
     :: Create directories if it doesn't exist
     if not exist ".\portable_config" mkdir .\portable_config
     if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
@@ -34,7 +34,6 @@ if exist ".auto-is-installed" (
     if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
     if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
     if not exist ".\portable_config\cache\jellyfin\" mkdir .\portable_config\cache\jellyfin\
-)
 
 :: Download portable Wget
 curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
