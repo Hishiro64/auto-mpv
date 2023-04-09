@@ -33,6 +33,7 @@ if exist ".auto-is-installed" (
     if not exist ".\portable_config\vs" mkdir .\portable_config\vs
     if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
     if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
+    if not exist ".\portable_config\cache\jellyfin\" mkdir .\portable_config\cache\jellyfin\
 )
 
 :: Download portable Wget
