@@ -8,8 +8,8 @@ local opts = {
 }
 
 function load_jelly_index()
-    mp.commandv("loadfile", ".\\portable_config\\cache\\jellyfin\\" .. opts.preroll)
-    mp.commandv("loadfile", ".\\portable_config\\cache\\jellyfin\\indexed-jellyfin-libary.m3u", "append")
+    mp.commandv("loadfile", ".\\portable_config\\cache\\jellyfin\\preroll\\" .. opts.preroll)
+    mp.commandv("loadfile", ".\\portable_config\\cache\\jellyfin\\jelly-indexer\\indexed-jellyfin-libary.m3u", "append")
 end
 
 mp.add_key_binding("ctrl+j", "load_jelly_index", load_jelly_index)
