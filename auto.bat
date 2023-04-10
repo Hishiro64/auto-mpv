@@ -88,6 +88,7 @@ pushd .\portable_config\script-opts
 ::::::::::::::::::: 
 
 :: Download latest version of script-opts
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/jelly-indexer.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/SmartCopyPaste.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/thumbfast.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/uosc.conf
@@ -110,6 +111,7 @@ cd scripts
 
 :: Download latest version of scripts
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/Auto-Mpv.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/jelly-indexer.lua
 %Download-->% https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 %Download-->% https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
 
