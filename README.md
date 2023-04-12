@@ -6,7 +6,7 @@ Automates your setup\update process for MPV Player. Fetching from external repos
 
 ## 🛠️ Installation
  1. [Download](https://github.com/Hishiro64/auto-mpv/releases/latest/download/auto-mpv.zip) the latest release
- 2. Extract the zip file
+ 2. Extract the zip file in a path with no spaces
  3. Navigate to the `auto-mpv` directory
  4. Edit ``auto.bat`` to match your requisites (Optional)
  5. Run ``auto.bat``
