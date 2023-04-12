@@ -22,9 +22,9 @@ cd %MPV%
 echo:
 if exist ".auto-is-installed" (
     echo   Updating  MPV
-    echo `````````````````
 ) else (
     echo   Installing  MPV
+)
     echo ```````````````````
 
     :: Create directories if it doesn't exist
@@ -32,8 +32,11 @@ if exist ".auto-is-installed" (
     if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
     if not exist ".\portable_config\vs" mkdir .\portable_config\vs
     if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
+    if not exist ".\portable_config\script-modules\" mkdir .\portable_config\script-modules\
+    if not exist ".\portable_config\script-modules\" mkdir .\portable_config\scripts\
+    if not exist ".\portable_config\cache\jellyfin\jelly-indexer\" mkdir .\portable_config\cache\jellyfin\jelly-indexer\
+    if not exist ".\portable_config\cache\jellyfin\preroll\" mkdir .\portable_config\cache\jellyfin\preroll\
     if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
-)
 
 :: Download portable Wget
 curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
@@ -63,10 +66,19 @@ del .\mpv-x86_64-v3.7z
 tar -xf .\python-3.11.2-embed-amd64.zip
 del .\python-3.11.2-embed-amd64.zip
 
+:: Get the requests module
+echo import site >> python311._pth
+%Download-->% https://bootstrap.pypa.io/get-pip.py
+.\python.exe get-pip.py --no-warn-script-location > nul
+.\Scripts\pip.exe install requests --no-warn-script-location > nul
+
 :: Download VapourSynth64 Portable ~R62
 %Download-->% https://github.com/vapoursynth/vapoursynth/releases/download/R62/VapourSynth64-Portable-R62.7z
 %Extract-->% .\VapourSynth64-Portable-R62.7z > nul
 del .\VapourSynth64-Portable-R62.7z
+
+:: Download latest version of jelly-indexer.pyw
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/jelly-indexer.pyw
 
 :: Download latest version of yt-dlp
 %Download-->% https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
@@ -82,6 +94,8 @@ pushd .\portable_config\script-opts
 ::::::::::::::::::: 
 
 :: Download latest version of script-opts
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/jelly-indexer.conf
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/Jelly-Index-Loader.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/SmartCopyPaste.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/thumbfast.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/uosc.conf
@@ -104,8 +118,16 @@ cd scripts
 
 :: Download latest version of scripts
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/Auto-Mpv.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/jelly-indexer.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script/Jelly-Index-Loader.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script/command_palette.lua
 %Download-->% https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 %Download-->% https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
+
+cd ..\
+cd script-modules
+
+%Download-->% https://raw.githubusercontent.com/Seme4eg/mpv-scripts/master/script-modules/extended-menu.lua
 
 cd ..\
 cd vs
@@ -128,6 +150,12 @@ cd shaders
 %Download-->% https://gist.githubusercontent.com/igv/a015fc885d5c22e6891820ad89555637/raw/7c151e0af2281ae6657809be1f3c5efe0e325c38/KrigBilateral.glsl
 %Download-->% https://github.com/igv/FSRCNN-TensorFlow/releases/download/1.1/FSRCNNX_x2_16-0-4-1.glsl
 %Download-->% https://raw.githubusercontent.com/bloc97/Anime4K/master/glsl/Restore/Anime4K_Restore_CNN_L.glsl
+
+cd ..\
+cd cache\jellyfin\preroll\
+
+:: Download preroll video for jelly-indexer
+%Download-->% https://prerolls.video//media/original/user/preroller/42d91703e5a843099f5181eefff9d8b2.Netflix_Colorful_Jellyfin_Pre-roll.mp4 --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" -O Netflix_Colorful_Jellyfin_Pre-roll.mp4
 
 popd
 pushd vapoursynth64\plugins
