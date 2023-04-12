@@ -22,6 +22,8 @@ Automates your setup\update process for MPV Player. Fetching from external repos
 ## 👀 Usage
    Drag and drop videos onto MPV or set MPV as your default video player by running ``mpv-install.bat``
 
+   Want to use this config with Jellyfin MPV Shim? Read [this](https://github.com/Hishiro64/auto-mpv/discussions/1#discussioncomment-5562678). Otherwise, use the native integration with Jelly Indexer and Jelly index loader.
+
 ## 🎹 Key Bindings
  - <kbd>Ctrl+Shift+u</kbd> To update using Auto MPV
  - <kbd>Ctrl+Shift+j</kbd> To run Jelly Indexer
