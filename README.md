@@ -24,6 +24,8 @@ Automates your setup\update process for MPV Player. Fetching from external repos
 
 ## 🎹 Key Bindings
  - <kbd>Ctrl+Shift+u</kbd> To update using Auto MPV
+ - <kbd>Ctrl+Shift+j</kbd> To run Jelly Indexer
+ - <kbd>Ctrl+j</kbd> To load Jelly index
  - <kbd>Ctrl+u</kbd> To upscale
  - <kbd>Ctrl+a</kbd> To upscale cartoons/anime (lite)
  - <kbd>Ctrl+r</kbd> Reset upscalers
