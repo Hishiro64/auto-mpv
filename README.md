@@ -32,7 +32,7 @@ Automates your setup\update process for MPV Player. Fetching from external repos
 
   3. From here you can load movies/shows from the playlist or the search using <kbd>F8</kbd>. Here's a preview:
 
-![Jellyfin-preview.gif](./Jellyfin-preview.gif)
+  ![Jellyfin-preview.gif](./Jellyfin-preview.gif)
 
 ## 🎹 Key Bindings
  - <kbd>Ctrl+Shift+u</kbd> To update using Auto MPV
