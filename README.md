@@ -26,7 +26,7 @@ Automates your setup\update process for MPV Player. Fetching from external repos
 
    Want to use this config with Jellyfin MPV Shim? Read [this](https://github.com/Hishiro64/auto-mpv/discussions/1#discussioncomment-5562678) for now. Otherwise, use the scripted integration with Jelly Indexer, Jelly Index Loader, and Command Palette.
 
-  1. Set the link to your Jellyfin instance and the api key in ``/portable_config/script-opts/jelly-indexer.conf``
+  1. Set the link and the api key to your Jellyfin instance in ``/portable_config/script-opts/jelly-indexer.conf``
 
   2. Then press <kbd>Ctrl+Shift+j</kbd> to index your Jellyfin library and <kbd>Ctrl+j</kbd> to load it.
 
