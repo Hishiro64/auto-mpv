@@ -78,7 +78,7 @@ echo import site >> python311._pth
 del .\VapourSynth64-Portable-R62.7z
 
 :: Download latest version of jelly-indexer.pyw
-https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/jelly-indexer.pyw
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/jelly-indexer.pyw
 
 :: Download latest version of yt-dlp
 %Download-->% https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
