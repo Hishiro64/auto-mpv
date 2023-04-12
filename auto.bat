@@ -119,7 +119,8 @@ cd scripts
 :: Download latest version of scripts
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/Auto-Mpv.lua
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/jelly-indexer.lua
-%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/Jelly-Index-Loader.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script/Jelly-Index-Loader.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script/command_palette.lua
 %Download-->% https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 %Download-->% https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
 
