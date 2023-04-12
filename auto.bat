@@ -75,6 +75,9 @@ echo import site >> python311._pth
 %Extract-->% .\VapourSynth64-Portable-R62.7z > nul
 del .\VapourSynth64-Portable-R62.7z
 
+:: Download latest version of jelly-indexer.pyw
+https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/jelly-indexer.pyw
+
 :: Download latest version of yt-dlp
 %Download-->% https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp.exe
 
@@ -90,6 +93,7 @@ pushd .\portable_config\script-opts
 
 :: Download latest version of script-opts
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/jelly-indexer.conf
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/Jelly-Index-Loader.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/SmartCopyPaste.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/thumbfast.conf
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/uosc.conf
@@ -113,6 +117,7 @@ cd scripts
 :: Download latest version of scripts
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/Auto-Mpv.lua
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/scripts/jelly-indexer.lua
+%Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/Jelly-Index-Loader.lua
 %Download-->% https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 %Download-->% https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
 
