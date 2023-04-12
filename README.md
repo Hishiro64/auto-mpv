@@ -30,12 +30,13 @@ Automates your setup\update process for MPV Player. Fetching from external repos
 
   2. Then press <kbd>Ctrl+Shift+j</kbd> to index your Jellyfin library and <kbd>Ctrl+j</kbd> to load it.
 
-  3. From here you can load movies/shows from the playlist or the search using <kbd>Ctrl+f</kbd>
+  3. From here you can load movies/shows from the playlist or the search using <kbd>F8</kbd>
 
 ## 🎹 Key Bindings
  - <kbd>Ctrl+Shift+u</kbd> To update using Auto MPV
  - <kbd>Ctrl+Shift+j</kbd> To run Jelly Indexer
  - <kbd>Ctrl+j</kbd> To load Jelly index
+ - <kbd>F8</kbd> To search your Jellyfin Libary
  - <kbd>Ctrl+u</kbd> To upscale
  - <kbd>Ctrl+a</kbd> To upscale cartoons/anime (lite)
  - <kbd>Ctrl+r</kbd> Reset upscalers
