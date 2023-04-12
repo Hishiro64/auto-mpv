@@ -25,7 +25,6 @@ params = {
 # Make the API request and get the response
 response = requests.get(f"{url}/Items", headers=headers, params=params)
 
-# Convert the response to a JSON object
 json_response = response.json()
 
 media_list = []
@@ -50,7 +49,7 @@ for item in json_response["Items"]:
         "Download_URL": download_url
     })
 
-# Sort the media list by Series, Index and Name
+# Sort the media list by Series, Name, and Index
 media_list = sorted(media_list, key=lambda x: (x["Series"], x["Index"] if x["Index"] else x["Name"]))
 
 # Create and open the output file in write mode

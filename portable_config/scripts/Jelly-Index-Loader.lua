@@ -1,8 +1,8 @@
 local mp = require 'mp'
 local options = require 'mp.options'
 
-local opts = {
     -- Please set both of these variables from "portable_config\script-opts\jelly-index-loader.conf".
+local opts = {
     preroll = "Netflix_Colorful_Jellyfin_Pre-roll.mp4",
     jellyfin_index = ".\\portable_config\\cache\\jellyfin\\indexed-jellyfin-libary.m3u"
 }

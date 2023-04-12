@@ -2,7 +2,7 @@
 
 require 'mp.options'
 
-  -- Please set both of these variables from "portable_config\script-opts\jelly-indexer.conf".
+    -- Please set both of these variables from "portable_config\script-opts\jelly-indexer.conf".
 local opts = {
   link = "<link-to-your-Jellyfin-instance>",
   key = "<API-Key-from-your-Jellyfin-instance>"
