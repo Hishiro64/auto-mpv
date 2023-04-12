@@ -32,9 +32,11 @@ if exist ".auto-is-installed" (
     if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
     if not exist ".\portable_config\vs" mkdir .\portable_config\vs
     if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
-    if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
+    if not exist ".\portable_config\script-modules\" mkdir .\portable_config\script-modules\
+    if not exist ".\portable_config\script-modules\" mkdir .\portable_config\scripts\
     if not exist ".\portable_config\cache\jellyfin\jelly-indexer\" mkdir .\portable_config\cache\jellyfin\jelly-indexer\
     if not exist ".\portable_config\cache\jellyfin\preroll\" mkdir .\portable_config\cache\jellyfin\preroll\
+    if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
 
 :: Download portable Wget
 curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
@@ -120,6 +122,11 @@ cd scripts
 %Download-->% https://raw.githubusercontent.com/Hishiro64/auto-mpv/main/portable_config/script-opts/Jelly-Index-Loader.lua
 %Download-->% https://raw.githubusercontent.com/po5/thumbfast/master/thumbfast.lua
 %Download-->% https://raw.githubusercontent.com/Eisa01/mpv-scripts/master/scripts/SmartCopyPaste.lua
+
+cd ..\
+cd script-modules
+
+%Download-->% https://raw.githubusercontent.com/Seme4eg/mpv-scripts/master/script-modules/extended-menu.lua
 
 cd ..\
 cd vs
