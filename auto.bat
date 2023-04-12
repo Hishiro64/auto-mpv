@@ -16,7 +16,7 @@ set "Download-->=%MPV%\wget.exe -q -N --show-progress"
 set "Extract-->=%MPV%\7zr.exe -y x" 
 
 :: Correct path
-cd %MPV%
+cd "%MPV%"
 
 :: Change header based on install status 
 echo:
