@@ -154,7 +154,7 @@ cd shaders
 cd ..\
 cd cache\jellyfin\preroll\
 
-:: Download preroll video for jelly-indexer
+:: Download preroll video for jelly-indexer (Set this to a video link of your choice as prerolls.video no longer exists outside the archive from the discord)
 %Download-->% https://prerolls.video//media/original/user/preroller/42d91703e5a843099f5181eefff9d8b2.Netflix_Colorful_Jellyfin_Pre-roll.mp4 --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" -O Netflix_Colorful_Jellyfin_Pre-roll.mp4
 
 popd
