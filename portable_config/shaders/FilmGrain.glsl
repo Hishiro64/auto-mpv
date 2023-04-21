@@ -1,6 +1,6 @@
 //!HOOK LUMA
 //!BIND HOOKED
-//!DESC gaussian film grain
+//!DESC gaussian film grain. Modified from "https://raw.githubusercontent.com/haasn/gentoo-conf/xor/home/nand/.mpv/shaders/filmgrain.glsl" to account for luminance.
 
 #define INTENSITY 0.16
 
