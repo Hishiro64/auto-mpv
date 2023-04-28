@@ -137,7 +137,7 @@ cd vs
 ::::::::::
 
 :: Download latest version of VapourSynth scripts
-%Download-->% https://raw.githubusercontent.com/hooke007/MPV_lazy/main/portable_config/vs/rife_2x.vpy
+%Download-->% https://raw.githubusercontent.com/hooke007/MPV_lazy/50ebf2c6570aa2db45bb158c3da2cbc8e3fb013e/portable_config/vs/rife_2x.vpy
 
 cd ..\
 cd shaders
