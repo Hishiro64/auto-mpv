@@ -39,7 +39,7 @@ if exist ".auto-is-installed" (
     if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
 
 :: Download portable Wget
-curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
+curl -O -C - --progress-bar https://web.archive.org/web/20230511215002/https://eternallybored.org/misc/wget/1.21.4/64/wget.exe
 
 :: Download latest pre-build MPV build for Windows
 setlocal EnableDelayedExpansion
