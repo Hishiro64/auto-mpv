@@ -27,16 +27,18 @@ if exist ".auto-is-installed" (
 )
     echo ```````````````````
 
-    :: Create directories if it doesn't exist
-    if not exist ".\portable_config" mkdir .\portable_config
-    if not exist ".\portable_config\script-opts" mkdir .\portable_config\script-opts
-    if not exist ".\portable_config\vs" mkdir .\portable_config\vs
-    if not exist ".\portable_config\shaders" mkdir .\portable_config\shaders
-    if not exist ".\portable_config\script-modules\" mkdir .\portable_config\script-modules\
-    if not exist ".\portable_config\script-modules\" mkdir .\portable_config\scripts\
-    if not exist ".\portable_config\cache\jellyfin\jelly-indexer\" mkdir .\portable_config\cache\jellyfin\jelly-indexer\
-    if not exist ".\portable_config\cache\jellyfin\preroll\" mkdir .\portable_config\cache\jellyfin\preroll\
-    if not exist ".\vapoursynth64\plugins\models\rife-v4" mkdir .\vapoursynth64\plugins\models\rife-v4
+:: Create directories if it doesn't exist
+for %%d in (
+    ".\portable_config"
+    ".\portable_config\script-opts"
+    ".\portable_config\vs"
+    ".\portable_config\shaders"
+    ".\portable_config\script-modules"
+    ".\portable_config\scripts"
+    ".\portable_config\cache\jellyfin\jelly-indexer"
+    ".\portable_config\cache\jellyfin\preroll"
+    ".\vapoursynth64\plugins\models\rife-v4"
+) do if not exist "%%~d" mkdir "%%~d"
 
 :: Download portable Wget
 curl -O -C - --progress-bar https://eternallybored.org/misc/wget/1.21.3/64/wget.exe 
