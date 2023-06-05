@@ -10,6 +10,9 @@ local opts = {
 function load_jelly_index()
     mp.commandv("loadfile", ".\\portable_config\\cache\\jellyfin\\preroll\\" .. opts.preroll)
     mp.commandv("loadfile", ".\\portable_config\\cache\\jellyfin\\jelly-indexer\\indexed-jellyfin-libary.m3u", "append")
+    mp.add_timeout(1, function()
+        mp.commandv("script-message-to", "command_palette", "show-command-palette", "🐟 Jellyfin")
+    end)
 end
 
 mp.add_key_binding("ctrl+j", "load_jelly_index", load_jelly_index)

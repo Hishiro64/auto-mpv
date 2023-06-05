@@ -10,7 +10,6 @@ url = sys.argv[1]
 # Set the API
 api_key = sys.argv[2]
 
-
 # Set the headers for the API request
 headers = {"X-Emby-Token": api_key}
 
